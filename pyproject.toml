@@ -1,0 +1,28 @@
+[project]
+authors = ["opsie.dev <contact@opsie.dev>", "Félix Voituret <fvoituret@opsie.dev>"]
+description = "State persistance using Redis as backend"
+name = "pydantic-graph-persistance-redis"
+version = "0.8.1"
+keywords = ["ai", "redis", "redis-client", "vector-database", "agents", "pydantic", "pydantic_graph"]
+classifiers = [
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "License :: OSI Approved :: MIT License",
+]
+packages = [{ include = "pydantic_graph" }]
+readme = "README.md"
+repository = "https://github.com/opsie-dev/pydantic-graph-persistance-redis"
+requires-python = ">=3.13"
+dependencies = [
+    "pydantic-graph>=0.8.1",
+    "redis>=6.4.0",
+]
+
+[dependency-groups]
+dev = [
+    "mypy>=1.17.1",
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.1.0",
+    "ruff>=0.12.11",
+]

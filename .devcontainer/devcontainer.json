@@ -1,0 +1,34 @@
+{
+	"name": "Python 3",
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+	"customizations": {
+		// Configure properties specific to VS Code.
+		"vscode": {
+			"extensions": [
+                "hashicorp.terraform",
+				"ms-python.python",
+				"ms-python.vscode-pylance"
+			],
+			"settings": {
+				"python.defaultInterpreterPath": ".venv/bin/python",
+				"python.linting.enabled": true,
+				"python.linting.pylintEnabled": true,
+				"python.formatting.autopep8Path": "/usr/local/py-utils/bin/autopep8",
+				"python.formatting.blackPath": "/usr/local/py-utils/bin/black",
+				"python.formatting.yapfPath": "/usr/local/py-utils/bin/yapf",
+				"python.linting.banditPath": "/usr/local/py-utils/bin/bandit",
+				"python.linting.flake8Path": "/usr/local/py-utils/bin/flake8",
+				"python.linting.mypyPath": "/usr/local/py-utils/bin/mypy",
+				"python.linting.pycodestylePath": "/usr/local/py-utils/bin/pycodestyle",
+				"python.linting.pydocstylePath": "/usr/local/py-utils/bin/pydocstyle",
+				"python.linting.pylintPath": "/usr/local/py-utils/bin/pylint"
+			}
+		}
+	},
+	"features": {
+		"github-cli": "latest"
+	},
+	"postCreateCommand": "bash ./.devcontainer/post-install.sh"
+}
