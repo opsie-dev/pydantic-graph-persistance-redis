@@ -1,6 +1,6 @@
 # pydantic-graph-redis-persistance
 
-[![PyPI - Version](https://img.shields.io/pypi/v/pydantic-graph-redis-persistance)](https://pypi.org/project/pydantic-graph-redis-persistance/)
+[![PyPI - Version](https://img.shields.io/pypi/v/pydantic-graph-persistance-redis)](https://pypi.org/project/pydantic-graph-persistance-redis/)
 
 ## Installation
 
