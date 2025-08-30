@@ -4,7 +4,7 @@ authors = [
 ]
 description = "State persistance using Redis as backend"
 name = "pydantic-graph-persistance-redis"
-version = "0.8.1-rc1"
+version = "0.8.1-rc2"
 keywords = ["ai", "redis", "redis-client", "vector-database", "agents", "pydantic", "pydantic_graph"]
 classifiers = [
     "Programming Language :: Python :: 3.11",
